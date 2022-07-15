@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     bookmage.cpp \
+    inimigo.cpp \
     level.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
 
 HEADERS += \
     bookmage.h \
+    inimigo.h \
     level.h \
     mainwindow.h \
     player.h

@@ -28,7 +28,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Ok</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -42,9 +42,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="BolaFogo">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Bola de Fogo</string>
        </property>
       </widget>
      </item>
@@ -56,9 +56,9 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="Desintegracao">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Desintegração</string>
        </property>
       </widget>
      </item>
@@ -70,9 +70,9 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QRadioButton" name="radioButton_3">
+      <widget class="QRadioButton" name="Invisibilidade">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Invisibilidade</string>
        </property>
       </widget>
      </item>
@@ -84,16 +84,16 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QRadioButton" name="radioButton_7">
+      <widget class="QRadioButton" name="RaioEletrico">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Raio Elétrico</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QRadioButton" name="radioButton_8">
+      <widget class="QRadioButton" name="Telecinese">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Telecinese</string>
        </property>
       </widget>
      </item>
@@ -114,7 +114,7 @@ color: rgb(255, 255, 255);</string>
      <item row="5" column="0">
       <widget class="QRadioButton" name="radioButton_11">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Quebra de encantos</string>
        </property>
       </widget>
      </item>
