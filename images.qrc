@@ -5,5 +5,10 @@
         <file>unnamed.png</file>
         <file>Fingolfin.jpg</file>
         <file>concreto.jpg</file>
+        <file>inimigo.png</file>
+        <file>mapacor.png</file>
+        <file>bandidios.png</file>
+        <file>mapa.png</file>
+        <file>casal.png</file>
     </qresource>
 </RCC>
