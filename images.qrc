@@ -10,5 +10,9 @@
         <file>bandidios.png</file>
         <file>mapa.png</file>
         <file>casal.png</file>
+        <file>transicao.png</file>
+        <file>cidadefora.png</file>
+        <file>anel.png</file>
+        <file>cidadedentro.png</file>
     </qresource>
 </RCC>

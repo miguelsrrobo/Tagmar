@@ -17,7 +17,7 @@ Level::~Level()
 
 void Level::on_pushButton_clicked()
 {
-    if(ui->radioButton_2){
+    if(ui->Button2->isChecked()){
         book = new BookMage(this);
         book->show();
     }
