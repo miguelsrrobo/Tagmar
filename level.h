@@ -18,6 +18,11 @@ class Level : public QMainWindow
 
 public:
     explicit Level(QWidget *parent = nullptr);
+    void BbookMmage();
+    void parteUm();
+    void parteDois();
+    void parteTres();
+    void parteQuatro();
     ~Level();
 
 private slots:
@@ -28,6 +33,8 @@ private:
     Ui::Level *ui;
     BookMage *book;
     Inimigo *inimigo;
+    size_t m_danoTotal;
+    QString mageId;
 };
 
 #endif // LEVEL_H

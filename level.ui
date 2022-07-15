@@ -43,7 +43,7 @@ color: rgb(255, 255, 255);</string>
      <attribute name="title">
       <string>Combate</string>
      </attribute>
-     <widget class="QProgressBar" name="progressBar_3">
+     <widget class="QProgressBar" name="experiencia">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -56,24 +56,24 @@ color: rgb(255, 255, 255);</string>
        <number>0</number>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label1">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>260</x>
         <y>20</y>
-        <width>201</width>
-        <height>161</height>
+        <width>241</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="label2">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>210</y>
+        <x>170</x>
+        <y>240</y>
         <width>67</width>
         <height>17</height>
        </rect>
@@ -82,11 +82,11 @@ color: rgb(255, 255, 255);</string>
        <string>TextLabel</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="label3">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>250</y>
+        <x>170</x>
+        <y>310</y>
         <width>67</width>
         <height>17</height>
        </rect>
@@ -201,12 +201,12 @@ color: rgb(255, 255, 255);</string>
           </layout>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="ok">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>PushButton</string>
+            <string>Ok</string>
            </property>
           </widget>
          </item>
@@ -215,14 +215,14 @@ color: rgb(255, 255, 255);</string>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QProgressBar" name="progressBar_2">
+          <widget class="QProgressBar" name="vida">
            <property name="value">
             <number>0</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QProgressBar" name="progressBar">
+          <widget class="QProgressBar" name="mana">
            <property name="value">
             <number>0</number>
            </property>

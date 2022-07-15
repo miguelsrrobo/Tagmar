@@ -2,6 +2,8 @@
 #define BOOKMAGE_H
 
 #include <QMainWindow>
+#include <utility>
+#include <string>
 
 namespace Ui {
 class BookMage;
@@ -13,13 +15,14 @@ class BookMage : public QMainWindow
 
 public:
     explicit BookMage(QWidget *parent = nullptr);
+    int mageName();
     ~BookMage();
 
 private slots:
-    void on_pushButton_clicked();
 
 private:
     Ui::BookMage *ui;
+    int m_mageId;
 };
 
 #endif // BOOKMAGE_H
