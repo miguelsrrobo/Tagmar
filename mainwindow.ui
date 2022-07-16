@@ -51,7 +51,7 @@ background-color: rgb(136, 138, 133);
 </string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Caracteristicas">
      <attribute name="title">
@@ -401,7 +401,7 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Influência</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -456,13 +456,13 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Subterfugio</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>30</y>
          <width>171</width>
-         <height>131</height>
+         <height>176</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -511,7 +511,7 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Geral</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -566,13 +566,13 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Profissional</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>30</y>
          <width>114</width>
-         <height>161</height>
+         <height>176</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -621,7 +621,7 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Manobras</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -676,13 +676,13 @@ background-color: rgb(136, 138, 133);
       <property name="title">
        <string>Conhecimento</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>30</y>
          <width>101</width>
-         <height>141</height>
+         <height>176</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_6">
