@@ -18,16 +18,16 @@ class Level : public QMainWindow
 
 public:
     explicit Level(QWidget *parent = nullptr);
+    ~Level();
+
     void BbookMmage();
     void parteUm();
     void parteDois();
     void parteTres();
     void parteQuatro();
-    ~Level();
 
 private slots:
-    void on_pushButton_clicked();
-
+    void on_direita_clicked();
 
 private:
     Ui::Level *ui;

@@ -6,7 +6,6 @@ Level::Level(QWidget *parent) :
     ui(new Ui::Level)
 {
     ui->setupUi(this);
-    QPixmap label(":/images/monstroletra.png");
 //    ui->label->setPixmap(label.scaled(350,350,Qt::KeepAspectRatioByExpanding));
 
 }
@@ -14,12 +13,6 @@ Level::Level(QWidget *parent) :
 Level::~Level()
 {
     delete ui;
-}
-
-void Level::on_pushButton_clicked()
-{
-    BbookMmage();
-    parteUm();
 }
 
 void Level::BbookMmage()
@@ -32,7 +25,9 @@ void Level::BbookMmage()
 
 void Level::parteUm()
 {
-    ui->label1->setText("No sul de Calco existe uma cidade chamada Abrasil, a cidade dos pequeninos de Calco, \n fundada po eles. Abrasil é conhecida por suas festas e pelos seus excelentes vinhos.");
+    QPixmap label(":/images/.png");
+    ui->label1->setPixmap(label.scaled(350,350,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("No sul de Calco existe uma cidade chamada Abrasil, a cidade dos pequeninos de Calco, \n fundada po eles. Abrasil é conhecida por suas festas e pelos seus excelentes vinhos.");
 }
 
 void Level::parteDois()
@@ -47,5 +42,11 @@ void Level::parteTres()
 
 void Level::parteQuatro()
 {
-
+    BbookMmage();
 }
+
+void Level::on_direita_clicked()
+{
+    parteUm();
+}
+
