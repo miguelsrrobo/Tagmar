@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QPixmap>
 #include "bookmage.h"
+#include <cstdlib>
+#include "bookmage.h"
+#include "inimigo.h"
 
 namespace Ui {
 class Level;
@@ -15,14 +18,23 @@ class Level : public QMainWindow
 
 public:
     explicit Level(QWidget *parent = nullptr);
+    void BbookMmage();
+    void parteUm();
+    void parteDois();
+    void parteTres();
+    void parteQuatro();
     ~Level();
 
 private slots:
     void on_pushButton_clicked();
 
+
 private:
     Ui::Level *ui;
     BookMage *book;
+    Inimigo *inimigo;
+    size_t m_danoTotal;
+    QString mageId;
 };
 
 #endif // LEVEL_H
