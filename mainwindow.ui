@@ -51,7 +51,7 @@ background-color: rgb(136, 138, 133);
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Caracteristicas">
      <attribute name="title">
@@ -120,12 +120,12 @@ background-color: rgb(136, 138, 133);
              </item>
              <item>
               <property name="text">
-               <string>Elfos Dourados</string>
+               <string>Elfo</string>
               </property>
              </item>
              <item>
               <property name="text">
-               <string>Elfos Florestais</string>
+               <string>Elfo Florestai</string>
               </property>
              </item>
              <item>
@@ -737,7 +737,7 @@ background-color: rgb(136, 138, 133);
        <string>Game</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_3">
+     <widget class="QRadioButton" name="BolaFogo">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -747,7 +747,7 @@ background-color: rgb(136, 138, 133);
        </rect>
       </property>
       <property name="text">
-       <string>RadioButton</string>
+       <string>Bola de Fogo</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radioButton_4">
@@ -760,7 +760,7 @@ background-color: rgb(136, 138, 133);
        </rect>
       </property>
       <property name="text">
-       <string>RadioButton</string>
+       <string>Desintegração</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radioButton_5">

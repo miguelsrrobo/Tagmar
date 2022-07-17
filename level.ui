@@ -37,7 +37,7 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgb(136, 138, 133);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Combate">
      <attribute name="title">
@@ -267,7 +267,7 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>70</y>
         <width>256</width>
         <height>192</height>
        </rect>
@@ -756,6 +756,32 @@ color: rgb(255, 255, 255);</string>
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nome:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Nome">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
      </widget>
     </widget>
    </widget>

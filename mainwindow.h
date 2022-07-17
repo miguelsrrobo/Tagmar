@@ -3,8 +3,9 @@
 
 #include <QMainWindow>
 #include <cstdlib>
-
+#include <string>
 #include "level.h"
+#include <QState>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,5 +25,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Level *level;
+    QString elfo = "Elfo", humano, elfofloresta, pequines, anao, meioelfo;
 };
 #endif // MAINWINDOW_H

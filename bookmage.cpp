@@ -37,3 +37,10 @@ int BookMage::mageName() {
     }
 }
 
+
+void BookMage::on_pushButton_clicked()
+{
+    this->close();
+    ui->radioButton_4->clicked(true);
+}
+
