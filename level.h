@@ -49,9 +49,9 @@ private:
     QString mageId;
     size_t incremento = 1;
     Player *player;
-    QList<QAbstractState*> m_states;
-    QStateMachine m_statemachine;
-    void addState(QState *state);
+//    QList<QAbstractState*> m_states;
+//    QStateMachine m_statemachine;
+//    void addState(QState *state);
 };
 
 #endif // LEVEL_H
