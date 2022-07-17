@@ -40,7 +40,7 @@ private slots:
     void parteTres();
     void parteQuatro();
     void on_esquerda_clicked();
-
+    void parteZero();
 private:
     Ui::Level *ui;
     BookMage *book;

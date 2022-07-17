@@ -12,7 +12,7 @@ class Conexao
         Conexao()
         {
             //endereço do arquivo banco de dados
-            banco = "/Users/Carlos Luilquer/Desktop/Sistema de bebida/build-ControlEstoque-Desktop_Qt_5_15_0_clang_64bit-Debug/db/bancoProjeto.db";
+            banco = "/home/miguel/Documentos/Tagmar";
             //nome do programa para conexão
             bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
         }

@@ -59,10 +59,10 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label1">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>210</x>
         <y>20</y>
-        <width>241</width>
-        <height>211</height>
+        <width>361</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="text">
@@ -79,7 +79,7 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="label3">
@@ -92,7 +92,7 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
      <widget class="QWidget" name="layoutWidget">
@@ -265,7 +265,7 @@ color: rgb(255, 255, 255);</string>
        <string>→</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_19">
+     <widget class="QLabel" name="Inimigovida">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -275,10 +275,10 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_20">
+     <widget class="QLabel" name="Inimigomana">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -288,7 +288,7 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
     </widget>
@@ -306,7 +306,7 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>290</x>
@@ -348,7 +348,7 @@ color: rgb(255, 255, 255);</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -390,7 +390,7 @@ color: rgb(255, 255, 255);</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>21</x>
@@ -494,7 +494,7 @@ color: rgb(255, 255, 255);</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>22</x>

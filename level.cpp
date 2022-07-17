@@ -30,7 +30,7 @@ Level::Level(QWidget *parent) :
 //    m_statemachine.setInitialState(m_states.at(0));
 
 //    m_statemachine.start();
-
+    parteZero();
     ui->vida->setValue(100);
     ui->mana->setValue(100);
 }
@@ -73,47 +73,55 @@ void Level::parteDois()
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordi- \n lheiras de Keiss");
+        ui->label3->setText("É primo do noivo, Tarislar, um meio-elfo de boa família, servindo como guarda junto do Barão Rimbard.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordi- \n lheiras de Keiss");
-    }
-    else if(false)
-    {
-        QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
-        ui->label2->setText("Um grupo de ladroens esta ataquando");
+        ui->label3->setText("É amigo da noiva. Uma pessoa bonita e gentil que sempre o recebe bem.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordi- \n lheiras de Keiss");
+        ui->label3->setText("O príncipe de Calco pediu pessoalmente que as autoridades de Saravossa enviassem um representante para escoltar a jovem como uma forma \n de agradecimento a Arnolfo e você foi o escolhido.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("ocê é um primo/amigo de infância da noiva ou aprendiz/amigo de Arnolfo Mão Forte.");
+        ui->label3->setText("Você é um primo/amigo de infância da noiva ou aprendiz/amigo de Arnolfo Mão Forte");
     }
 }
 
 void Level::parteTres()
 {
-    QPixmap label(":/images/bandidos.png");
+    QPixmap label(":/images/casal.png");
     ui->label1->setPixmap(label.scaled(200,200,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("Um grupo de ladroens esta ataquando");
+    ui->label2->setText("Cada um foi escolhido como escolta de honra que, por tradição, leva a noiva até o casamento ganhando \n ricos presentes durante a cerimônia.");
+    ui->label3->setText("O casamento se dará no Forte Águas Profundas, pertencente ao Barão Rimbard, onde vive o noivo; \n nas montanhas perto de Tória, uma cidade bem ao sul de Calco, do outro lado das montanhas.");
+
+}
+
+void Level::parteZero()
+{
+    QPixmap label(":/images/transicao.png");
+    ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Sejam  Bem-vindos ao incrível mundo de Tagmar! Embarque numa aventura cheia de desafios, \n fama, fortuna e glória esperam por vocês.");
+
 }
 
 void Level::parteQuatro()
 {
-    parteTres();
+    QPixmap label(":/images/bandidos.png");
+    ui->label1->setPixmap(label.scaled(200,200,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Todos os personagens se encontram ao anoitecer na taberna. \n Lá eles veem Arnolfo Mão Forte, uma figura impressionante, com quase dois metros de altura e corpo de touro, \n porém contente e, a esta hora, um pouco bêbado");
+    ui->label3->setText("É uma pequena festa, pois a escolta de honra (vocês!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
+
     inimigo = new Inimigo;
     player = new Player;
 
@@ -172,6 +180,8 @@ void Level::on_direita_clicked()
 void Level::on_esquerda_clicked()
 {
 }
+
+
 
 //void Level::addState(QState *state)
 //{
