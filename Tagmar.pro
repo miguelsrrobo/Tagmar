@@ -19,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     bookmage.h \
+    conexao.h \
     inimigo.h \
     level.h \
     mainwindow.h \
