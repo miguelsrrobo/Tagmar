@@ -14,6 +14,7 @@ SOURCES += \
     level.cpp \
     main.cpp \
     mainwindow.cpp \
+    mapa.cpp \
     player.cpp
 
 HEADERS += \
@@ -21,12 +22,14 @@ HEADERS += \
     inimigo.h \
     level.h \
     mainwindow.h \
+    mapa.h \
     player.h
 
 FORMS += \
     bookmage.ui \
     level.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    mapa.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

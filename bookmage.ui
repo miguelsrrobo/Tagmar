@@ -21,7 +21,7 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(136, 138, 133);</string>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Ok">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -52,9 +52,9 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QRadioButton" name="radioButton_4">
+      <widget class="QRadioButton" name="AnulacaoMistica">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Anulação Mística</string>
        </property>
       </widget>
      </item>
@@ -66,9 +66,9 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QRadioButton" name="radioButton_5">
+      <widget class="QRadioButton" name="DeteccaoMagia">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Detecção de Magia </string>
        </property>
       </widget>
      </item>
@@ -80,9 +80,9 @@ color: rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="2" column="1" rowspan="2">
-      <widget class="QRadioButton" name="radioButton_6">
+      <widget class="QRadioButton" name="Refletir">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Refletir</string>
        </property>
       </widget>
      </item>
@@ -100,22 +100,8 @@ color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QRadioButton" name="radioButton_9">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QRadioButton" name="radioButton_10">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
      <item row="5" column="0">
-      <widget class="QRadioButton" name="radioButton_11">
+      <widget class="QRadioButton" name="QuebraEncantos">
        <property name="text">
         <string>Quebra de encantos</string>
        </property>

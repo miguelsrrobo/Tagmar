@@ -46,341 +46,373 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/images/concreto.jpg);
-background-color: rgb(136, 138, 133);
+     <string notr="true">background-color: rgb(136, 138, 133);
 </string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Caracteristicas">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/concreto.jpg);</string>
+     </property>
      <attribute name="title">
       <string>Caracteristicas</string>
      </attribute>
-     <widget class="QWidget" name="layoutWidget">
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>360</width>
-        <height>600</height>
+        <width>601</width>
+        <height>611</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout">
-           <item>
-            <widget class="QLabel" name="Nome">
-             <property name="text">
-              <string>Nome</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="nomeEdit">
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_14">
-           <item>
-            <widget class="QLabel" name="Raca">
-             <property name="text">
-              <string>Raça</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QComboBox" name="racaBox">
-             <item>
-              <property name="text">
-               <string/>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Humanos</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Pequeninos</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Anões</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Elfo</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Elfo Florestai</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Meio-Elfos</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
-           <item>
-            <widget class="QLabel" name="Experiencia">
-             <property name="text">
-              <string>Experiência</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="spinBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <widget class="QLabel" name="Estagio">
-             <property name="text">
-              <string>Estágio</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="spinBox_2"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QLabel" name="Proficao">
-             <property name="text">
-              <string>Profição</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QComboBox" name="comboBox">
-             <item>
-              <property name="text">
-               <string/>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Bardos</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Guerreiros</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Ladinos</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Magos</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Rastreadores</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Sacerdotes</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="proficaoDoisEdit_6"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_6">
-           <item>
-            <widget class="QLabel" name="Deus">
-             <property name="text">
-              <string>Deus</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="radioButton">
-             <property name="text">
-              <string>Sim</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="radioButton_2">
-             <property name="text">
-              <string>Não</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_7">
-           <item>
-            <widget class="QLabel" name="Intelecto">
-             <property name="text">
-              <string>Intelecto</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="intelectoBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_8">
-           <item>
-            <widget class="QLabel" name="Aura">
-             <property name="text">
-              <string>Aura</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="auraBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_9">
-           <item>
-            <widget class="QLabel" name="Carisma">
-             <property name="text">
-              <string>Carisma</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="carismaBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_10">
-           <item>
-            <widget class="QLabel" name="Forca">
-             <property name="text">
-              <string>Força</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="forcaBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_11">
-           <item>
-            <widget class="QLabel" name="Fisico">
-             <property name="text">
-              <string>Físico</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="fisicoBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_12">
-           <item>
-            <widget class="QLabel" name="Agilidade">
-             <property name="text">
-              <string>Agilidade</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="agilidadeBox"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_13">
-           <item>
-            <widget class="QLabel" name="Percepcao">
-             <property name="text">
-              <string>Percepcao</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="percepcaoBox"/>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QLabel" name="face">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>10</y>
-        <width>141</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="layoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>380</x>
-        <y>560</y>
-        <width>138</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="resto">
-         <property name="text">
-          <string>Pontos Total</string>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string>Personagem</string>
          </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>251</width>
+            <height>211</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="Nome">
+               <property name="text">
+                <string>Nome</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="nomeEdit">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLabel" name="Raca">
+               <property name="text">
+                <string>Raça</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="racaBox">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Humanos</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Pequeninos</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Anões</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Elfo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Elfo Florestai</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Meio-Elfos</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="Experiencia">
+               <property name="text">
+                <string>Experiência</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="Estagio">
+               <property name="text">
+                <string>Estágio</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_2"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="Proficao">
+               <property name="text">
+                <string>Profição</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Bardos</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Guerreiros</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Ladinos</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Magos</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Rastreadores</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Sacerdotes</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="proficaoDoisEdit_6"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="Deus">
+               <property name="text">
+                <string>Deus</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton">
+               <property name="text">
+                <string>Sim</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_2">
+               <property name="text">
+                <string>Não</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="face">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>30</y>
+            <width>141</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Imagem da Raça</string>
+          </property>
+         </widget>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="spinBox_3"/>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="title">
+          <string>Atributos</string>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>125</width>
+            <height>227</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="Intelecto">
+               <property name="text">
+                <string>Intelecto</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="intelectoBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="Aura">
+               <property name="text">
+                <string>Aura</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="auraBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="Carisma">
+               <property name="text">
+                <string>Carisma</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="carismaBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="Forca">
+               <property name="text">
+                <string>Força</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="forcaBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="Fisico">
+               <property name="text">
+                <string>Físico</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="fisicoBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QLabel" name="Agilidade">
+               <property name="text">
+                <string>Agilidade</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="agilidadeBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="Percepcao">
+               <property name="text">
+                <string>Percepcao</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="percepcaoBox"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>250</y>
+            <width>138</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="resto">
+             <property name="text">
+              <string>Pontos Total</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_3"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -389,335 +421,323 @@ background-color: rgb(136, 138, 133);
      <attribute name="title">
       <string>Habilidades</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>20</y>
-        <width>131</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Influência</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>106</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
-        <item>
-         <widget class="QRadioButton" name="Arte">
-          <property name="text">
-           <string>Arte</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="arteBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Negociacao">
-          <property name="text">
-           <string>Negociação</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="negociacaoBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Etiqueta">
-          <property name="text">
-           <string>Etiqueta</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="etiquetaBox"/>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>240</y>
-        <width>181</width>
-        <height>171</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Subterfugio</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>30</y>
-         <width>171</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_8">
-        <item>
-         <widget class="QRadioButton" name="Furtividade">
-          <property name="text">
-           <string>Furtividade</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="furtividadeBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="DesFechadura">
-          <property name="text">
-           <string>Destravar Fechadura</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="desfechaduraBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="FurObjetos">
-          <property name="text">
-           <string>Furtar Objetos</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="furobjetosBox"/>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>240</y>
-        <width>201</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Geral</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>174</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
-        <item>
-         <widget class="QRadioButton" name="LidarAnimais">
-          <property name="text">
-           <string>Lidar com Animais</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="lidaranimaisBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="SeguirTrilhas">
-          <property name="text">
-           <string>Seguir Trilhas</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="seguirtrilhasBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="armadilhas">
-          <property name="text">
-           <string>Manusear Armadilhas</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="armadilhasBox"/>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="geometry">
-       <rect>
-        <x>430</x>
-        <y>20</y>
-        <width>131</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Profissional</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>114</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <widget class="QRadioButton" name="Agricultura">
-          <property name="text">
-           <string>Agricultura</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="agriculturaBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Ferreiro">
-          <property name="text">
-           <string>Ferreiro</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="ferreiroBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Nautica">
-          <property name="text">
-           <string>Náutica</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="nauticaBox"/>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_5">
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>20</y>
-        <width>120</width>
-        <height>191</height>
+        <y>10</y>
+        <width>581</width>
+        <height>231</height>
        </rect>
       </property>
-      <property name="title">
-       <string>Manobras</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>20</y>
-         <width>115</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QRadioButton" name="Acrobacia">
-          <property name="text">
-           <string>Acrobacia</string>
+      <layout class="QHBoxLayout" name="horizontalLayout_15">
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>Manobras</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>121</width>
+            <height>201</height>
+           </rect>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="Acrobacia">
+             <property name="text">
+              <string>Acrobacia</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="acrobaciaBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Malabarismo">
+             <property name="text">
+              <string>Malabarismo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="malabarismoBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Natacao">
+             <property name="text">
+              <string>Natação</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="natacaoBox"/>
+           </item>
+          </layout>
          </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="acrobaciaBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Malabarismo">
-          <property name="text">
-           <string>Malabarismo</string>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>Conhecimento</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>121</width>
+            <height>201</height>
+           </rect>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QRadioButton" name="Linguas">
+             <property name="text">
+              <string>Línguas</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="linguasBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Medicina">
+             <property name="text">
+              <string>Medicina</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="medicinaBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Misticismo">
+             <property name="text">
+              <string>Misticismo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="misticismoBox"/>
+           </item>
+          </layout>
          </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="malabarismoBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Natacao">
-          <property name="text">
-           <string>Natação</string>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Influência</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>121</width>
+            <height>201</height>
+           </rect>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QRadioButton" name="Arte">
+             <property name="text">
+              <string>Arte</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="arteBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Negociacao">
+             <property name="text">
+              <string>Negociação</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="negociacaoBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Etiqueta">
+             <property name="text">
+              <string>Etiqueta</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="etiquetaBox"/>
+           </item>
+          </layout>
          </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="natacaoBox"/>
-        </item>
-       </layout>
-      </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>Profissional</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>121</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QRadioButton" name="Agricultura">
+             <property name="text">
+              <string>Agricultura</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="agriculturaBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Ferreiro">
+             <property name="text">
+              <string>Ferreiro</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="ferreiroBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Nautica">
+             <property name="text">
+              <string>Náutica</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="nauticaBox"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
      </widget>
-     <widget class="QGroupBox" name="groupBox_6">
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>20</y>
-        <width>120</width>
-        <height>181</height>
+        <x>30</x>
+        <y>240</y>
+        <width>581</width>
+        <height>251</height>
        </rect>
       </property>
-      <property name="title">
-       <string>Conhecimento</string>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>101</width>
-         <height>176</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
-         <widget class="QRadioButton" name="Linguas">
-          <property name="text">
-           <string>Línguas</string>
+      <layout class="QHBoxLayout" name="horizontalLayout_16">
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Subterfugio</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>271</width>
+            <height>211</height>
+           </rect>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QRadioButton" name="Furtividade">
+             <property name="text">
+              <string>Furtividade</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="furtividadeBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="DesFechadura">
+             <property name="text">
+              <string>Destravar Fechadura</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="desfechaduraBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="FurObjetos">
+             <property name="text">
+              <string>Furtar Objetos</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="furobjetosBox"/>
+           </item>
+          </layout>
          </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="linguasBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Medicina">
-          <property name="text">
-           <string>Medicina</string>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Geral</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>271</width>
+            <height>211</height>
+           </rect>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QRadioButton" name="LidarAnimais">
+             <property name="text">
+              <string>Lidar com Animais</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="lidaranimaisBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="SeguirTrilhas">
+             <property name="text">
+              <string>Seguir Trilhas</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="seguirtrilhasBox"/>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="armadilhas">
+             <property name="text">
+              <string>Manusear Armadilhas</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="armadilhasBox"/>
+           </item>
+          </layout>
          </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="medicinaBox"/>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="Misticismo">
-          <property name="text">
-           <string>Misticismo</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="misticismoBox"/>
-        </item>
-       </layout>
-      </widget>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="Magias">
@@ -737,122 +757,80 @@ background-color: rgb(136, 138, 133);
        <string>Game</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="BolaFogo">
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
         <x>40</x>
         <y>90</y>
-        <width>112</width>
-        <height>23</height>
+        <width>531</width>
+        <height>81</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Bola de Fogo</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_4">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>120</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Desintegração</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_5">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>150</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_6">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>120</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_7">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>90</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_8">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>150</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_9">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>120</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_10">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>90</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_11">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>150</y>
-        <width>112</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="BolaFogo">
+         <property name="text">
+          <string>Bola de Fogo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="QuebraEncantos">
+         <property name="text">
+          <string>Quebra de encantos</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QRadioButton" name="AnulacaoMistica">
+         <property name="text">
+          <string>Anulação Mística</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="Desintegracao">
+         <property name="text">
+          <string>Desintegração</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="Telecinese">
+         <property name="text">
+          <string>Telecinese</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QRadioButton" name="DeteccaoMagia">
+         <property name="text">
+          <string>Detecção de Magia </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="Invisibilidade">
+         <property name="text">
+          <string>Invisibilidade</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QRadioButton" name="RaioEletrico">
+         <property name="text">
+          <string>Raio Elétrico</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QRadioButton" name="Refletir">
+         <property name="text">
+          <string>Refletir</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>

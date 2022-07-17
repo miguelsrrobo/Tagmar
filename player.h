@@ -7,7 +7,7 @@ class Player
 {
 public:
     Player();
-    float life = 20, ataque = 2, defesa = 5;
+    float life = 0, ataque = 0, defesa = 5;
 
 };
 

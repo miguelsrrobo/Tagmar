@@ -2,6 +2,7 @@
 #include "ui_bookmage.h"
 #include <QMessageBox>
 #include <cstdlib>
+#include <QDebug>
 
 BookMage::BookMage(QWidget *parent) :
     QMainWindow(parent),
@@ -17,6 +18,7 @@ BookMage::~BookMage()
 int BookMage::mageName() {
     if(ui->BolaFogo->isChecked())
     {
+        qDebug() << "Bola de fogo detected";
         return m_mageId = 01;
     }
     else if(ui->Desintegracao->isChecked())
@@ -41,6 +43,7 @@ int BookMage::mageName() {
 void BookMage::on_pushButton_clicked()
 {
     this->close();
-    ui->radioButton_4->clicked(true);
+    mageName();
+//    ui->radioButton_4->clicked(true);
 }
 

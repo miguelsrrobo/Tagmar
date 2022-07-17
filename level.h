@@ -16,6 +16,7 @@
 #include "bookmage.h"
 #include "inimigo.h"
 #include "player.h"
+#include "mapa.h"
 
 namespace Ui {
 class Level;
