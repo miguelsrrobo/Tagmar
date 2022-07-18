@@ -50,10 +50,19 @@ void Level::BbookMmage()
     }
 }
 
+
+void Level::parteZero()
+{
+    QPixmap label(":/images/transicao.png");
+    ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Sejam  Bem-vindos ao incrível mundo de Tagmar! Embarque numa aventura cheia de desafios, \n fama, fortuna e glória esperam por vocês.");
+
+}
+
 void Level::parteUm()
 {
-    QPixmap label(":/images/casal.png");
-    ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+    QPixmap label(":/images/mapacor.png");
+    ui->label1->setPixmap(label.scaled(300,300,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("No sul de Calco existe uma cidade chamada Abrasil, a cidade dos pequeninos de Calco, \n fundada po eles. Abrasil é conhecida por suas festas e pelos seus excelentes vinhos.");
     ui->label3->setText("Dentre as tabernas da cidade uma se destaca pela boa comida, vinho farto e por seu proprietário.\n O lugar se chama 'O Barril de Cedro'. Seu dono é Arnolfo Mão Forte, um antigo capitão da Guarda Real \n que perdeu uma perna heroicamente em combate salvando, assim, o próprio Príncipe");
 
@@ -64,64 +73,74 @@ void Level::parteDois()
     if(true)
     {
         QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordi- \n lheiras de Keiss");
+        ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordilheiras de Keiss");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
         ui->label3->setText("É primo do noivo, Tarislar, um meio-elfo de boa família, servindo como guarda junto do Barão Rimbard.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
         ui->label3->setText("É amigo da noiva. Uma pessoa bonita e gentil que sempre o recebe bem.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
         ui->label3->setText("O príncipe de Calco pediu pessoalmente que as autoridades de Saravossa enviassem um representante para escoltar a jovem como uma forma \n de agradecimento a Arnolfo e você foi o escolhido.");
     }
     else if(false)
     {
         QPixmap label(":/images/casal.png");
-        ui->label1->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
-        ui->label3->setText("Você é um primo/amigo de infância da noiva ou aprendiz/amigo de Arnolfo Mão Forte");
+        ui->label3->setText("Você é um amigo de infância dos cônjujes");
     }
 }
 
 void Level::parteTres()
 {
     QPixmap label(":/images/casal.png");
-    ui->label1->setPixmap(label.scaled(200,200,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("Cada um foi escolhido como escolta de honra que, por tradição, leva a noiva até o casamento ganhando \n ricos presentes durante a cerimônia.");
-    ui->label3->setText("O casamento se dará no Forte Águas Profundas, pertencente ao Barão Rimbard, onde vive o noivo; \n nas montanhas perto de Tória, uma cidade bem ao sul de Calco, do outro lado das montanhas.");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Você foi chamado como escolta de honra que, por tradição, leva a noiva até o casamento ganhando ricos presentes durante a cerimônia.");
+    ui->label3->setText("O casamento se dará no Forte Águas Profundas, pertencente ao Barão Rimbard, onde vive o noivo; \n nas montanhas perto de Tória, uma cidade bem ao sul de Calco,\n do outro lado das montanhas");
 
 }
 
-void Level::parteZero()
-{
-    QPixmap label(":/images/transicao.png");
-    ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("Sejam  Bem-vindos ao incrível mundo de Tagmar! Embarque numa aventura cheia de desafios, \n fama, fortuna e glória esperam por vocês.");
-
-}
 
 void Level::parteQuatro()
 {
-    QPixmap label(":/images/bandidos.png");
-    ui->label1->setPixmap(label.scaled(200,200,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("Todos os personagens se encontram ao anoitecer na taberna. \n Lá eles veem Arnolfo Mão Forte, uma figura impressionante, com quase dois metros de altura e corpo de touro, \n porém contente e, a esta hora, um pouco bêbado");
-    ui->label3->setText("É uma pequena festa, pois a escolta de honra (vocês!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Você se encontra ao anoitecer na taberna. Lá vem Arnolfo Mão Forte, uma figura impressionante,\n com quase dois metros de altura e um corpo robusto, porém contente e, a esta hora, um pouco bêbado.");
+    ui->label3->setText("É uma pequena festa, pois a escolta de honra (você!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
+}
 
+void Level::parte5()
+{
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("");
+    ui->label3->setText("");
+}
+void Level::parte6()
+{
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Você se encontra ao anoitecer na taberna. Lá vem Arnolfo Mão Forte, uma figura impressionante,\n com quase dois metros de altura e um corpo robusto, porém contente e, a esta hora, um pouco bêbado.");
+    ui->label3->setText("É uma pequena festa, pois a escolta de honra (você!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
+}
+void Level::parte7()
+{
     inimigo = new Inimigo;
     player = new Player;
 
@@ -148,6 +167,21 @@ void Level::parteQuatro()
     }
     BbookMmage();
 }
+void Level::parte8()
+{}
+void Level::parte9()
+{}
+void Level::parte10()
+{}
+void Level::parte11()
+{}
+void Level::parte12()
+{}
+void Level::parte13()
+{}
+void Level::parte14()
+{}
+
 
 void Level::on_direita_clicked()
 {

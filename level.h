@@ -35,12 +35,24 @@ public:
 private slots:
     void on_direita_clicked();
     void BbookMmage();
+    void parteZero();
     void parteUm();
     void parteDois();
     void parteTres();
     void parteQuatro();
+    void parte5();
+    void parte6();
+    void parte7();
+    void parte8();
+    void parte9();
+    void parte10();
+    void parte11();
+    void parte12();
+    void parte13();
+    void parte14();
+
+
     void on_esquerda_clicked();
-    void parteZero();
 private:
     Ui::Level *ui;
     BookMage *book;
