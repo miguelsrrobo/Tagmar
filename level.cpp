@@ -1,5 +1,6 @@
 #include "level.h"
 #include "ui_level.h"
+#include <iostream>
 
 Level::Level(QWidget *parent) :
     QMainWindow(parent),
@@ -7,7 +8,7 @@ Level::Level(QWidget *parent) :
 {
     ui->setupUi(this);
 //    ui->label->setPixmap(label.scaled(350,350,Qt::KeepAspectRatioByExpanding));
-    connect(ui->ok,SIGNAL(clicked()),this,SLOT(parteQuatro()));
+    connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
 
 
 //    for (size_t i = 0; i < 10; ++i)
@@ -33,6 +34,7 @@ Level::Level(QWidget *parent) :
     parteZero();
     ui->vida->setValue(100);
     ui->mana->setValue(100);
+    ui->Button1->setChecked(true);
 }
 
 Level::~Level()
@@ -129,8 +131,21 @@ void Level::parte5()
 {
     QPixmap label(":/images/casal.png");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("");
-    ui->label3->setText("");
+    ui->label2->setText("Os noivos estão interagindo com os convidados");
+    ui->label3->setText("voce aceita interagir com eles?");
+    ui->testo1->setText("sim");
+    ui->testo2->setText("não");
+    ui->testo3->setText(" ");
+
+    if(ui->Button1->isChecked())
+    {
+        connect(ui->ok,SIGNAL(clicked()),this,SLOT(interacaocasal()));
+//        int a = 10;
+    }
+    else{
+        connect(ui->ok,SIGNAL(clicked()),this,SLOT(parte6()));
+//
+    }
 }
 void Level::parte6()
 {
@@ -138,37 +153,30 @@ void Level::parte6()
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("Você se encontra ao anoitecer na taberna. Lá vem Arnolfo Mão Forte, uma figura impressionante,\n com quase dois metros de altura e um corpo robusto, porém contente e, a esta hora, um pouco bêbado.");
     ui->label3->setText("É uma pequena festa, pois a escolta de honra (você!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
+    ui->testo1->setText("player->getNome()  ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
 }
 void Level::parte7()
 {
+    //    connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
+
+    QPixmap label(":/images/bandidios.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("Bandidos");
+    ui->label3->setText(" ");
     inimigo = new Inimigo;
     player = new Player;
-
-    int Ilife = inimigo->life;
-    int Iataque = inimigo->ataque;
-    int Idefes = inimigo->defesa;
-
-    int Plife = player->life;
-    int Pataque = player->ataque;
-    int Pdefes = player->defesa;
-    ui->testo1->setText("Ataque comum");
-    ui->testo2->setText("livro de Magias");
-    ui->testo3->setText("fulga");
-    if(ui->Button1->isChecked()){
-        Idefes -= (Pataque/Iataque);
-        Ilife -= ((Pataque/Iataque)/2);
-        QString life = (QChar)Iataque;
-        QString defesa = (QChar)Idefes;
-        ui->label2->setText(life);
-        ui->label3->setText(defesa);
-    }
-    if(Ilife == 0){
-//        QMessageBox
-    }
-    BbookMmage();
 }
 void Level::parte8()
-{}
+{
+    ui->label1->setText(" ");
+    ui->label2->setText(" ");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
 void Level::parte9()
 {}
 void Level::parte10()
@@ -181,6 +189,15 @@ void Level::parte13()
 {}
 void Level::parte14()
 {}
+
+void Level::interacaocasal()
+{
+    ui->label2->setText(" ");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
 
 
 void Level::on_direita_clicked()
@@ -203,10 +220,16 @@ void Level::on_direita_clicked()
            parteQuatro();
            break;
        case 4:
-           parteTres();
+           parte5();
            break;
        case 5:
-           parteTres();
+           parte6();
+           break;
+       case 6:
+           parte7();
+           break;
+       case 7:
+           parte8();
            break;
        }
 }

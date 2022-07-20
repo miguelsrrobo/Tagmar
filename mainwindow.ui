@@ -120,7 +120,7 @@ color: rgb(255, 255, 255);</string>
                </item>
                <item>
                 <property name="text">
-                 <string>Humanos</string>
+                 <string>Humano</string>
                 </property>
                </item>
                <item>
@@ -140,12 +140,12 @@ color: rgb(255, 255, 255);</string>
                </item>
                <item>
                 <property name="text">
-                 <string>Elfo Florestai</string>
+                 <string>Elfo Florestal</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>Meio-Elfos</string>
+                 <string>Meio-Elfo</string>
                 </property>
                </item>
               </widget>
@@ -263,7 +263,7 @@ color: rgb(255, 255, 255);</string>
          <widget class="QLabel" name="face">
           <property name="geometry">
            <rect>
-            <x>270</x>
+            <x>420</x>
             <y>30</y>
             <width>141</width>
             <height>181</height>
@@ -555,9 +555,9 @@ color: rgb(255, 255, 255);</string>
             <widget class="QSpinBox" name="arteBox"/>
            </item>
            <item>
-            <widget class="QRadioButton" name="Negociacao">
+            <widget class="QRadioButton" name="Persuasao">
              <property name="text">
-              <string>Negociação</string>
+              <string>Persuasão</string>
              </property>
             </widget>
            </item>
@@ -747,10 +747,10 @@ color: rgb(255, 255, 255);</string>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>520</x>
-        <y>590</y>
-        <width>89</width>
-        <height>25</height>
+        <x>250</x>
+        <y>240</y>
+        <width>111</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="text">
@@ -831,6 +831,30 @@ color: rgb(255, 255, 255);</string>
         </widget>
        </item>
       </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Autores">
+     <attribute name="title">
+      <string>Autores</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>621</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Alex Ladeiras, Alex Resende, Alisson Diorgenes Vasconcelos, Andre Luis Tomaz Dionísio, Angelo
+Gurzoni Junior e Pablo Gallis, Bernard Guimaraes Nogueira, Carlos Martins, Diego Awi, Diego
+Guinâncio, Fábio Carvalho Magalhães, Felipe Deprá Galdino, Fernando Nascimento Reis da Costa,
+Geraldo Lúcio Cabral da Silva, Gustavo Lorena Pinto, João Antonio Modernel Bender, Jonas Conrado 
+ Cardozo, José Jorge Osório da Silva Junior, Marcelo Bouzas Barbosa Teixeira, Marcelo Rodrigues,
+Mauro Draco, Samuel Oliveira de Azevedo, Rywv, Saulo Carvalho Rocha, Stefano Guimarães Giusini, 
+ Thiago Rodrigues do Nascimento e Wévison Guimarães dos Santos Genuino.</string>
+      </property>
      </widget>
     </widget>
    </widget>

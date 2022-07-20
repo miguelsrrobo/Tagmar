@@ -12,7 +12,7 @@ class Conexao
         Conexao()
         {
             //endereço do arquivo banco de dados
-            banco = "/home/miguel/Documentos/Tagmar";
+            banco = "/home/miguel/Documentos/Tagmar/game";
             //nome do programa para conexão
             bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
         }

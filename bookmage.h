@@ -25,6 +25,8 @@ private slots:
 private:
     Ui::BookMage *ui;
     int m_mageId;
+signals:
+    void sinal1();
 };
 
 #endif // BOOKMAGE_H

@@ -50,8 +50,7 @@ private slots:
     void parte12();
     void parte13();
     void parte14();
-
-
+    void interacaocasal();
     void on_esquerda_clicked();
 private:
     Ui::Level *ui;
