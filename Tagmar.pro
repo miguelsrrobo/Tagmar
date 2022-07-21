@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    armas.cpp \
     bookmage.cpp \
     inimigo.cpp \
     level.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     player.cpp
 
 HEADERS += \
+    armas.h \
     bookmage.h \
     conexao.h \
     inimigo.h \

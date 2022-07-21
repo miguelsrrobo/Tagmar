@@ -78,6 +78,12 @@ color: rgb(255, 255, 255);</string>
         <height>61</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -90,6 +96,12 @@ color: rgb(255, 255, 255);</string>
         <width>751</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string/>
@@ -223,6 +235,9 @@ color: rgb(255, 255, 255);</string>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QProgressBar" name="vida">
+           <property name="maximum">
+            <number>10000</number>
+           </property>
            <property name="value">
             <number>0</number>
            </property>
@@ -230,6 +245,9 @@ color: rgb(255, 255, 255);</string>
          </item>
          <item>
           <widget class="QProgressBar" name="mana">
+           <property name="maximum">
+            <number>10000</number>
+           </property>
            <property name="value">
             <number>0</number>
            </property>

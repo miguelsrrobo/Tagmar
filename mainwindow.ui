@@ -162,7 +162,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="spinBox"/>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -176,7 +180,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="spinBox_2"/>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>1</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -190,7 +198,7 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox">
+              <widget class="QComboBox" name="proficaoBox">
                <item>
                 <property name="text">
                  <string/>
@@ -263,14 +271,27 @@ color: rgb(255, 255, 255);</string>
          <widget class="QLabel" name="face">
           <property name="geometry">
            <rect>
-            <x>420</x>
-            <y>30</y>
+            <x>300</x>
+            <y>50</y>
             <width>141</width>
             <height>181</height>
            </rect>
           </property>
           <property name="text">
            <string>Imagem da Raça</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="proficao">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>50</y>
+            <width>141</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Imagem da Profição</string>
           </property>
          </widget>
         </widget>
@@ -408,7 +429,7 @@ color: rgb(255, 255, 255);</string>
             </widget>
            </item>
            <item>
-            <widget class="QSpinBox" name="spinBox_3"/>
+            <widget class="QSpinBox" name="PontosTotal"/>
            </item>
           </layout>
          </widget>

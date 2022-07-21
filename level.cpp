@@ -1,46 +1,24 @@
 #include "level.h"
 #include "ui_level.h"
+#include <QMessageBox>
 #include <iostream>
+#include <cstdlib>
 
 Level::Level(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Level)
 {
     ui->setupUi(this);
-//    ui->label->setPixmap(label.scaled(350,350,Qt::KeepAspectRatioByExpanding));
     connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
-
-
-//    for (size_t i = 0; i < 10; ++i)
-//    {
-//        QState *state = new QState();
-//        state->setObjectName("State" + QString::number(i));
-//        addState(state);
-//    }
-
-
-//    qInfo() << "Children:" << m_statemachine.children().length();
-
-//    QFinalState *final = new QFinalState();
-//    QState *p = qobject_cast<QState*>(m_states.last());
-//    p->addTransition(ui->direita,&QPushButton::clicked,final);
-
-//    connect(&m_statemachine, &QStateMachine::finished, this, &Level::parteQuatro);
-
-//    m_statemachine.addState(final);
-//    m_statemachine.setInitialState(m_states.at(0));
-
-//    m_statemachine.start();
     parteZero();
     ui->vida->setValue(100);
     ui->mana->setValue(100);
     ui->Button1->setChecked(true);
+    ui->vida->setMaximum(25);
 }
 
 Level::~Level()
 {
-//    qDeleteAll(m_states);
-//    m_states.clear();
     delete ui;
 }
 
@@ -140,11 +118,6 @@ void Level::parte5()
     if(ui->Button1->isChecked())
     {
         connect(ui->ok,SIGNAL(clicked()),this,SLOT(interacaocasal()));
-//        int a = 10;
-    }
-    else{
-        connect(ui->ok,SIGNAL(clicked()),this,SLOT(parte6()));
-//
     }
 }
 void Level::parte6()
@@ -153,18 +126,21 @@ void Level::parte6()
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("Você se encontra ao anoitecer na taberna. Lá vem Arnolfo Mão Forte, uma figura impressionante,\n com quase dois metros de altura e um corpo robusto, porém contente e, a esta hora, um pouco bêbado.");
     ui->label3->setText("É uma pequena festa, pois a escolta de honra (você!) sai amanhã com a noiva. \n Arnolfo parte cinco dias depois para o casamento.");
-    ui->testo1->setText("player->getNome()  ");
+    ui->testo1->setText(" ");
     ui->testo2->setText(" ");
     ui->testo3->setText(" ");
 }
 void Level::parte7()
 {
-    //    connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
-
     QPixmap label(":/images/bandidios.png");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+
     ui->label2->setText("Bandidos");
     ui->label3->setText(" ");
+    ui->testo1->setText("Ataque Rapido");
+    ui->testo2->setText("Ateque normal");
+    ui->testo3->setText("Fugir");
+
     inimigo = new Inimigo;
     player = new Player;
 }
@@ -192,65 +168,97 @@ void Level::parte14()
 
 void Level::interacaocasal()
 {
-    ui->label2->setText(" ");
-    ui->label3->setText(" ");
-    ui->testo1->setText(" ");
-    ui->testo2->setText(" ");
-    ui->testo3->setText(" ");
+    ui->label2->setText("A jovem noive esta interagindo com as pessoa");
+    ui->label3->setText("O que voce faz ?");
+    ui->testo1->setText("Roubo");
+    ui->testo2->setText("Luta");
+    ui->testo3->setText("swing");/*resoposta boa note dona desse monumental par de coxas*/
+    int d20 =2 * rand() % 20;
+    int carisma = player->getCarisma();
+//    if (ui->Button3->isChecked()) {
+//      ui->label3->setText("O que voce faz ?");
+//      if ((d20 + carisma) > 20) {
+//        QMessageBox msgBox;
+//        msgBox.setText(
+//            "Sua ação foi muito bem executado voce ganhou um dildo 20x20");
+//        msgBox.exec();
+//      }
+//    }
+    if(ui->Button3->isChecked())
+    {
+        connect(ui->ok,SIGNAL(clicked()),this,SLOT(negativas1(d20, carisma)));
+    }
+
+}
+
+void Level::interacaoNegativas()
+{
+
+}
+
+void Level::negativas1(int d20, int carisma)
+{
+    if(ui->Button3->isChecked())
+    {
+        ui->label3->setText("O que voce faz ?");
+        if((d20+carisma) > 20)
+        {
+            QMessageBox msgBox;
+            msgBox.setText("Sua ação foi muito bem executado voce ganhou um dildo 20x20");
+            msgBox.exec();
+        }
+    }
 }
 
 
 void Level::on_direita_clicked()
 {
-//    if(m_statemachine.isRunning()) qInfo() << "clicked";
        const int numberStates = 50; // or whatever the number of your states is
        static int counter = numberStates -1;
        ++counter %= numberStates; // increment and start over after last state
-       switch (counter) {
-       case 0:
+
+       if(counter == 0)
+       {
            parteUm();
-           break;
-       case 1:
+       }
+       else if(counter == 1)
+       {
            parteDois();
-           break;
-       case 2:
+       }
+       else if(counter == 2)
+       {
            parteTres();
-           break;
-       case 3:
+       }
+       else if(counter == 3)
+       {
            parteQuatro();
-           break;
-       case 4:
+       }
+       else if(counter == 4)
+       {
            parte5();
-           break;
-       case 5:
+
+       }
+       else if(counter == 5)
+       {
            parte6();
-           break;
-       case 6:
+
+       }
+       else if(counter == 6)/* <--- colo car consição de inpedimento de progesso da historia*/
+       {
            parte7();
-           break;
-       case 7:
+
+       }
+       else if((counter == 7 && inimigo->life == 0) || ui->Button3->isChecked())
+       {
            parte8();
-           break;
+
+       }
+       else if(counter == 8)
+       {
+
        }
 }
 
 void Level::on_esquerda_clicked()
 {
 }
-
-
-
-//void Level::addState(QState *state)
-//{
-//    state->assignProperty(ui->testo2,"text",state->objectName());
-//    int i = m_states.length();
-//    if(i < 0)
-//    {
-//        QState *p = qobject_cast<QState*>(m_states.at(i - 1));
-//        p->addTransition(ui->direita,&QPushButton::clicked, state);
-//    }
-//    connect(state, &QState::entered, this, &Level::parteUm);
-//    connect(state, &QState::exited, this, &Level::parteDois);
-//    m_states.append(state);
-//    m_statemachine.addState(state);
-//}

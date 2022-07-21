@@ -51,6 +51,8 @@ private slots:
     void parte13();
     void parte14();
     void interacaocasal();
+    void interacaoNegativas();
+    void negativas1(int d20, int carisma);
     void on_esquerda_clicked();
 private:
     Ui::Level *ui;
