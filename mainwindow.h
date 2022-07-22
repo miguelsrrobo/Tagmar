@@ -24,11 +24,11 @@ private slots:
 
     void on_racaBox_currentTextChanged(const QString &arg1);
 
-    void on_comboBox_currentTextChanged(const QString &arg1);
-
     void on_spinBox_3_valueChanged(int arg1);
 
     void on_intelectoBox_textChanged(const QString &arg1);
+
+    void on_proficaoBox_currentTextChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
@@ -38,7 +38,7 @@ private:
     QString _nome, _raca, _proficao1, _proficao2;
     bool _deus;
     size_t _estagio;
-    size_t _life = 0, _ataque = 0, _defesa = 5;
+    size_t _life = 0, _ataque = 0, _defesa = 0, _mana = 0;
     size_t _intelecto = 0, _fisico = 0, _aura = 0, _carisma = 0, _forca = 0, _agilidade = 0, _percepcao = 0;
 
 };

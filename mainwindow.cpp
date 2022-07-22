@@ -81,37 +81,6 @@ void MainWindow::on_racaBox_currentTextChanged(const QString &arg1)
             ui->face->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding)); }
 }
 
-
-void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
-{
-    if(ui->proficaoBox->currentText()=="Bardos"){
-        QPixmap label(":/images/armas4.png");
-        ui->face->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-    }
-    else if(ui->proficaoBox->currentText()=="Guerreiros"){
-        QPixmap label(":/images/armas4.png");
-        ui->face->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-        _life = 25;
-        player->setLife(_life);
-
-    }
-    else if(ui->proficaoBox->currentText()=="Ladinos"){
-        QPixmap label(":/images/armas4.png");
-        ui->face->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-    }
-    else if(ui->proficaoBox->currentText()=="Magos"){
-            QPixmap label(":/images/armas4.jpeg");
-            ui->face->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
-    }
-    else if(ui->proficaoBox->currentText()=="Rastreadores"){
-            QPixmap label(":/images/armas4.png");
-            ui->face->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-    }
-    else if(ui->proficaoBox->currentText()=="Sacerdotes"){
-            QPixmap label(":/images/armas4.png");
-            ui->face->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding)); }
-}
-
 void MainWindow::on_spinBox_3_valueChanged(int arg1)
 {
     int temp = arg1;
@@ -123,5 +92,58 @@ void MainWindow::on_intelectoBox_textChanged(const QString &arg1)
 {
     int value = 1;
     ui->intelectoBox->setValue(ui->PontosTotal->value() + value);
+}
+
+
+void MainWindow::on_proficaoBox_currentTextChanged(const QString &arg1)
+{
+    player = new Player();
+    if(ui->proficaoBox->currentText()=="Bardos"){
+        QPixmap label(":/images/armas4.jpeg");
+        ui->proficao->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+        _life = 16;
+        _mana = 8;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+    else if(ui->proficaoBox->currentText()=="Guerreiros"){
+        QPixmap label(":/images/armas5.jpeg");
+        ui->proficao->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        _life = 25;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+    else if(ui->proficaoBox->currentText()=="Ladinos"){
+        QPixmap label(":/images/armas1.jpeg");
+        ui->proficao->setPixmap(label.scaled(100,100,Qt::KeepAspectRatioByExpanding));
+        _life = 16;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+    else if(ui->proficaoBox->currentText()=="Magos"){
+        QPixmap label(":/images/armas6.jpeg");
+        ui->proficao->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+        _life = 12;
+        _mana = 16;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+    else if(ui->proficaoBox->currentText()=="Rastreadores"){
+        QPixmap label(":/images/armas3.jpeg");
+        ui->proficao->setPixmap(label.scaled(80,80,Qt::KeepAspectRatioByExpanding));
+        _life = 20;
+        _mana = 8;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+    else if(ui->proficaoBox->currentText()=="Sacerdotes"){
+        QPixmap label(":/images/armas2.jpeg");
+        ui->proficao->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+        _life = 20;
+        _mana = 12;
+        player->setLife(_life);
+        player->setMana(_mana);
+    }
+
 }
 

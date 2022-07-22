@@ -11,7 +11,7 @@ Level::Level(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
     parteZero();
-    ui->vida->setValue(100);
+    ui->vida->setValue(125);
     ui->mana->setValue(100);
     ui->Button1->setChecked(true);
     ui->vida->setMaximum(25);
@@ -132,9 +132,8 @@ void Level::parte6()
 }
 void Level::parte7()
 {
-    QPixmap label(":/images/bandidios.png");
-    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
-
+    QPixmap label(":/images/bandidos.png");
+    ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("Bandidos");
     ui->label3->setText(" ");
     ui->testo1->setText("Ataque Rapido");
@@ -143,6 +142,9 @@ void Level::parte7()
 
     inimigo = new Inimigo;
     player = new Player;
+    if(inimigo->life == 0){
+        player->setEstagio(1);
+    }
 }
 void Level::parte8()
 {
@@ -165,6 +167,50 @@ void Level::parte13()
 {}
 void Level::parte14()
 {}
+
+void Level::passagem1()
+{
+    QPixmap label(":/images/javalitaberna.png");
+    ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("-------------------------------\nCAPITULO 1 - A TAVERNA DO JAVALI MANHOSO\n-------------------------------");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
+
+void Level::passagem2()
+{
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("-------------------------------\nCAPITULO 2 - A VIAGEM\n-------------------------------");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
+
+void Level::passagem3()
+{
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("-------------------------------\nCAPITULO 3 - O FORTE\n-------------------------------");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
+
+void Level::passagem4()
+{
+    QPixmap label(":/images/casal.png");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("-------------------------------\nCAPITULO 4 - A CHEGADA\n-------------------------------");
+    ui->label3->setText(" ");
+    ui->testo1->setText(" ");
+    ui->testo2->setText(" ");
+    ui->testo3->setText(" ");
+}
 
 void Level::interacaocasal()
 {
@@ -243,17 +289,23 @@ void Level::on_direita_clicked()
            parte6();
 
        }
-       else if(counter == 6)/* <--- colo car consição de inpedimento de progesso da historia*/
+       else if(counter == 6)
+       {
+           passagem1();
+       }
+       else if(counter == 7)/* <--- colo car consição de inpedimento de progesso da historia*/
        {
            parte7();
+           if(ui->ok->isCheckable())
+               return;
 
        }
-       else if((counter == 7 && inimigo->life == 0) || ui->Button3->isChecked())
+       else if((counter == 8 && inimigo->life == 0) || ui->Button3->isChecked())
        {
            parte8();
 
        }
-       else if(counter == 8)
+       else if(counter == 9)
        {
 
        }

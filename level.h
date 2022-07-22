@@ -50,6 +50,10 @@ private slots:
     void parte12();
     void parte13();
     void parte14();
+    void passagem1();
+    void passagem2();
+    void passagem3();
+    void passagem4();
     void interacaocasal();
     void interacaoNegativas();
     void negativas1(int d20, int carisma);

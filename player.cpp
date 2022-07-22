@@ -66,7 +66,7 @@ size_t Player::getEstagio()
 
 void Player::setEstagio(size_t estagio)
 {
-    this->_estagio = estagio;
+    this->_estagio += estagio;
 }
 
 size_t Player::getLife()
@@ -168,4 +168,14 @@ size_t Player::getPercepcao()
 void Player::setPercepcao(size_t percepcao)
 {
     this->_percepcao = percepcao;
+}
+
+size_t Player::getMana()
+{
+    return _mana;
+}
+
+void Player::setMana(size_t mana)
+{
+    this->_mana = mana;
 }

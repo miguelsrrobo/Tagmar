@@ -22,12 +22,12 @@
         <file>raça04.png</file>
         <file>raça05.png</file>
         <file>raça06.png</file>
-        <file>armas1.jpeg</file>
         <file>armas2.jpeg</file>
         <file>armas3.jpeg</file>
         <file>armas4.jpeg</file>
         <file>armas5.jpeg</file>
         <file>armas6.jpeg</file>
         <file>javalitaberna.png</file>
+        <file>armas1.jpeg</file>
     </qresource>
 </RCC>
