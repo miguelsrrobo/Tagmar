@@ -9,7 +9,7 @@ Level::Level(QWidget *parent) :
     ui(new Ui::Level)
 {
     ui->setupUi(this);
-    connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
+//    connect(ui->ok,SIGNAL(clicked()),this,SLOT(BbookMmage()));
     parteZero();
     ui->vida->setValue(125);
     ui->mana->setValue(100);
@@ -23,13 +23,6 @@ Level::~Level()
     delete ui;
 }
 
-void Level::BbookMmage()
-{
-    if(ui->Button2->isChecked()){
-        book = new BookMage(this);
-        book->show();
-    }
-}
 
 
 void Level::parteZero()
@@ -161,7 +154,7 @@ void Level::parte8()
 }
 void Level::parte9()
 {
-    QPixmap label(":/images/viagem.jpg");
+    QPixmap label(":/images/estrada.jpg");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("A estrada");
     ui->label3->setText("No dia seguinte, todos acordam cedo, preparados para uma viagem de 10 dias. As despedidas são rápidas e Arnolfo lamenta não poder ir com vocês,\n devendo partir em 5 dias. A noiva está ansiosa e um pouco preocupada por causa do mau tempo, mas mostra sua felicidade com um belo sorriso.");
@@ -194,7 +187,7 @@ void Level::passagem1()
 void Level::passagem2()
 {
     QPixmap label(":/images/viagem.jpg");
-    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label1->setPixmap(label.scaled(250,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("-------------------------------\nCAPITULO 2 - A VIAGEM\n-------------------------------");
     ui->label3->setText(" ");
     ui->testo1->setText(" ");
@@ -230,16 +223,13 @@ void Level::interacaocasal()
     ui->label3->setText("O que voce faz ?");
     ui->testo1->setText("Roubo");
     ui->testo2->setText("Luta");
-    ui->testo3->setText("swing");/*resoposta boa note dona desse monumental par de coxas*/
+    ui->testo3->setText(" ");/*resoposta boa note dona desse monumental par de coxas*/
     int d20 =2 * rand() % 20;
     int carisma = player->getCarisma();
 //    if (ui->Button3->isChecked()) {
 //      ui->label3->setText("O que voce faz ?");
 //      if ((d20 + carisma) > 20) {
-//        QMessageBox msgBox;
-//        msgBox.setText(
-//            "Sua ação foi muito bem executado voce ganhou um dildo 20x20");
-//        msgBox.exec();
+//
 //      }
 //    }
     if(ui->Button3->isChecked())
@@ -312,17 +302,13 @@ void Level::on_direita_clicked()
        }
        else if((counter == 8 && inimigo->life == 0) || ui->Button3->isChecked())
        {
-           parte8();
+           passagem2();
 
        }
        else if(counter == 9)
        {
 
        }
-}
-
-void Level::on_esquerda_clicked()
-{
 }
 
 void Level::personagem()
@@ -503,4 +489,11 @@ void Level::setMana(size_t mana)
 }
 //Final
 
+
+
+void Level::on_magias_clicked()
+{
+    book = new BookMage(this);
+    book->show();
+}
 

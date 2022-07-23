@@ -186,6 +186,13 @@ color: rgb(255, 255, 255);</string>
              </property>
             </spacer>
            </item>
+           <item>
+            <widget class="QPushButton" name="magias">
+             <property name="text">
+              <string>Magias</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
          <item>
@@ -256,19 +263,6 @@ color: rgb(255, 255, 255);</string>
         </layout>
        </item>
       </layout>
-     </widget>
-     <widget class="QPushButton" name="esquerda">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>220</y>
-        <width>31</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>←</string>
-      </property>
      </widget>
      <widget class="QPushButton" name="direita">
       <property name="geometry">

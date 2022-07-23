@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>639</width>
-    <height>679</height>
+    <width>643</width>
+    <height>683</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -41,8 +41,8 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>6</x>
       <y>10</y>
-      <width>621</width>
-      <height>661</height>
+      <width>631</width>
+      <height>671</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -258,7 +258,7 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QRadioButton" name="naoDeusButton">
+              <widget class="QRadioButton" name="radioButton_2">
                <property name="text">
                 <string>Não</string>
                </property>

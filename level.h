@@ -82,7 +82,6 @@ public:
 
 private slots:
     void on_direita_clicked();
-    void BbookMmage();
     void parteZero();
     void parteUm();
     void parteDois();
@@ -105,9 +104,10 @@ private slots:
     void interacaocasal();
     void interacaoNegativas();
     void negativas1(int d20, int carisma);
-    void on_esquerda_clicked();
     void personagem();
 
+
+    void on_magias_clicked();
 
 private:
     Ui::Level *ui;
