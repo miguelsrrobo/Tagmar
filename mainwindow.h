@@ -6,6 +6,7 @@
 #include <string>
 #include "level.h"
 #include <QState>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +30,8 @@ private slots:
     void on_intelectoBox_textChanged(const QString &arg1);
 
     void on_proficaoBox_currentTextChanged(const QString &arg1);
+
+    void on_simDeusButton_clicked();
 
 private:
     Ui::MainWindow *ui;

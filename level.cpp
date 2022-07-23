@@ -15,6 +15,7 @@ Level::Level(QWidget *parent) :
     ui->mana->setValue(100);
     ui->Button1->setChecked(true);
     ui->vida->setMaximum(25);
+    personagem();
 }
 
 Level::~Level()
@@ -50,14 +51,16 @@ void Level::parteUm()
 
 void Level::parteDois()
 {
-    if(true)
+    player = new Player;
+    QString raca = player->getRaca();
+    if(raca == "Anões")
     {
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
         ui->label2->setText("Esta noite a taberna está particularmente festiva, pois a filha de Arnolfo,\n Rosiem, irá se casar e vocês são convidados de honra");
         ui->label3->setText("É amigo de Arnolfo, que goza de grande fama e amizade nesta raça por seu heroísmo nas guerras \n que expulsaram os orcos de Filanti para as cordilheiras de Keiss");
     }
-    else if(false)
+    else if(raca == "Humano")
     {
         QPixmap label(":/images/casal.png");
         ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
@@ -134,8 +137,8 @@ void Level::parte7()
 {
     QPixmap label(":/images/bandidos.png");
     ui->label1->setPixmap(label.scaled(250,250,Qt::KeepAspectRatioByExpanding));
-    ui->label2->setText("Bandidos");
-    ui->label3->setText(" ");
+    ui->label2->setText("Vem uma gangue de arruaceiros entram de penetra na festa e começam a incomodar as damas, \nse o personagem intervir ele irá num duelo com o líder dos arruaceiros, se ganhar,\n recebe renome e recompensa, se falhar, a comoção alertará os guardas e eles expulsarão os intrusos.");
+    ui->label3->setText("Combate com o líder dos arruaceiros");
     ui->testo1->setText("Ataque Rapido");
     ui->testo2->setText("Ateque normal");
     ui->testo3->setText("Fugir");
@@ -144,19 +147,28 @@ void Level::parte7()
     player = new Player;
     if(inimigo->life == 0){
         player->setEstagio(1);
+        //vitoria = ganha uma armadura leve
     }
 }
 void Level::parte8()
 {
-    ui->label1->setText(" ");
+    ui->label1->setText("Haroldo (irmão mais novo) pede para se juntar ao grupo para proteger do perigo");
     ui->label2->setText(" ");
     ui->label3->setText(" ");
+    ui->testo1->setText("sim");
+    ui->testo2->setText("não");
+    ui->testo3->setText(" ");
+}
+void Level::parte9()
+{
+    QPixmap label(":/images/viagem.jpg");
+    ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
+    ui->label2->setText("A estrada");
+    ui->label3->setText("No dia seguinte, todos acordam cedo, preparados para uma viagem de 10 dias. As despedidas são rápidas e Arnolfo lamenta não poder ir com vocês,\n devendo partir em 5 dias. A noiva está ansiosa e um pouco preocupada por causa do mau tempo, mas mostra sua felicidade com um belo sorriso.");
     ui->testo1->setText(" ");
     ui->testo2->setText(" ");
     ui->testo3->setText(" ");
 }
-void Level::parte9()
-{}
 void Level::parte10()
 {}
 void Level::parte11()
@@ -181,7 +193,7 @@ void Level::passagem1()
 
 void Level::passagem2()
 {
-    QPixmap label(":/images/casal.png");
+    QPixmap label(":/images/viagem.jpg");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("-------------------------------\nCAPITULO 2 - A VIAGEM\n-------------------------------");
     ui->label3->setText(" ");
@@ -192,7 +204,7 @@ void Level::passagem2()
 
 void Level::passagem3()
 {
-    QPixmap label(":/images/casal.png");
+    QPixmap label(":/images/forte.png");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("-------------------------------\nCAPITULO 3 - O FORTE\n-------------------------------");
     ui->label3->setText(" ");
@@ -203,7 +215,7 @@ void Level::passagem3()
 
 void Level::passagem4()
 {
-    QPixmap label(":/images/casal.png");
+    QPixmap label(":/images/achegada.jpg");
     ui->label1->setPixmap(label.scaled(150,150,Qt::KeepAspectRatioByExpanding));
     ui->label2->setText("-------------------------------\nCAPITULO 4 - A CHEGADA\n-------------------------------");
     ui->label3->setText(" ");
@@ -281,17 +293,15 @@ void Level::on_direita_clicked()
        }
        else if(counter == 4)
        {
-           parte5();
-
+           passagem1();
        }
        else if(counter == 5)
        {
-           parte6();
-
+           parte5();
        }
        else if(counter == 6)
        {
-           passagem1();
+           parte6();
        }
        else if(counter == 7)/* <--- colo car consição de inpedimento de progesso da historia*/
        {
@@ -314,3 +324,183 @@ void Level::on_direita_clicked()
 void Level::on_esquerda_clicked()
 {
 }
+
+void Level::personagem()
+{
+    ui->Nome->setText(getNome());
+}
+
+// Inivio
+
+QString Level::getNome()
+{
+    return _nome;
+}
+
+void Level::setNome(QString nome)
+{
+    this->_nome = nome;
+}
+
+QString Level::getRaca()
+{
+    return _raca;
+}
+
+void Level::setRaca(QString raca)
+{
+    this->_raca = raca;
+}
+
+QString Level::getProficao1()
+{
+    return _proficao1;
+}
+
+void Level::setProficao1(QString Proficao1)
+{
+    _proficao1 = Proficao1;
+}
+
+QString Level::getProficao2()
+{
+    return _proficao2;
+}
+
+void Level::setProficao2(QString Proficao2)
+{
+    this->_proficao2 = Proficao2;
+}
+
+bool Level::getDeus()
+{
+    return _deus;
+}
+
+void Level::setDeus(bool deus)
+{
+    this->_deus = deus;
+}
+
+size_t Level::getEstagio()
+{
+    return _estagio;
+}
+
+void Level::setEstagio(size_t estagio)
+{
+    this->_estagio += estagio;
+}
+
+size_t Level::getLife()
+{
+    return _life;
+}
+
+void Level::setLife(size_t life)
+{
+    this->_life = life;
+}
+
+size_t Level::getAtaque()
+{
+    return _ataque;
+}
+
+void Level::setAtaque(size_t ataque)
+{
+    this->_ataque = ataque;
+}
+
+size_t Level::getDefesa()
+{
+    return _defesa;
+}
+
+void Level::setDefesa(size_t defesa)
+{
+    this->_defesa = defesa;
+}
+
+size_t Level::getIntelecto()
+{
+    return _intelecto;
+}
+
+void Level::setIntelecto(size_t intelecto)
+{
+    this->_intelecto = intelecto;
+}
+
+size_t Level::getFisico()
+{
+    return this->_fisico;
+}
+
+void Level::setFisico(size_t fisico)
+{
+    this->_fisico = fisico;
+}
+
+size_t Level::getAura()
+{
+    return this->_aura;
+}
+
+void Level::setAura(size_t aura)
+{
+    this->_aura = aura;
+}
+
+size_t Level::getCarisma()
+{
+    return _carisma;
+}
+
+void Level::setCarisma(size_t carisma)
+{
+    this->_carisma = carisma;
+}
+
+size_t Level::getForca()
+{
+    return _forca;
+}
+
+void Level::setForca(size_t forca)
+{
+    this->_forca = forca;
+}
+
+size_t Level::getAgilidade()
+{
+    return _agilidade;
+}
+
+void Level::setAgilidade(size_t agilidade)
+{
+    this->_agilidade = agilidade;
+}
+
+size_t Level::getPercepcao()
+{
+    return _percepcao;
+}
+
+void Level::setPercepcao(size_t percepcao)
+{
+    this->_percepcao = percepcao;
+}
+
+size_t Level::getMana()
+{
+    return _mana;
+}
+
+void Level::setMana(size_t mana)
+{
+    this->_mana = mana;
+}
+//Final
+
+

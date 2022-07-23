@@ -251,14 +251,14 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QRadioButton" name="radioButton">
+              <widget class="QRadioButton" name="simDeusButton">
                <property name="text">
                 <string>Sim</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QRadioButton" name="radioButton_2">
+              <widget class="QRadioButton" name="naoDeusButton">
                <property name="text">
                 <string>Não</string>
                </property>
