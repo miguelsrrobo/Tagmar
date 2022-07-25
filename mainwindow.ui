@@ -50,7 +50,7 @@ color: rgb(255, 255, 255);</string>
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Caracteristicas">
      <property name="styleSheet">
@@ -306,7 +306,7 @@ color: rgb(255, 255, 255);</string>
            <rect>
             <x>10</x>
             <y>30</y>
-            <width>125</width>
+            <width>188</width>
             <height>227</height>
            </rect>
           </property>
@@ -321,7 +321,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="intelectoBox"/>
+              <widget class="QLabel" name="intelectoLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -335,7 +339,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="auraBox"/>
+              <widget class="QLabel" name="auraLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -349,7 +357,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="carismaBox"/>
+              <widget class="QLabel" name="carismaLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -363,7 +375,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="forcaBox"/>
+              <widget class="QLabel" name="forcaLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -377,7 +393,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="fisicoBox"/>
+              <widget class="QLabel" name="fisicoLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -391,7 +411,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="agilidadeBox"/>
+              <widget class="QLabel" name="agilidadeLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -405,7 +429,11 @@ color: rgb(255, 255, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="percepcaoBox"/>
+              <widget class="QLabel" name="percepcaoLabel">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -745,14 +773,14 @@ color: rgb(255, 255, 255);</string>
             <widget class="QSpinBox" name="seguirtrilhasBox"/>
            </item>
            <item>
-            <widget class="QRadioButton" name="armadilhas">
+            <widget class="QRadioButton" name="ManusearArmadilhas">
              <property name="text">
               <string>Manusear Armadilhas</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QSpinBox" name="armadilhasBox"/>
+            <widget class="QSpinBox" name="manusearArmadilhasBox"/>
            </item>
           </layout>
          </widget>
@@ -760,16 +788,11 @@ color: rgb(255, 255, 255);</string>
        </item>
       </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="Magias">
-     <attribute name="title">
-      <string>Magias</string>
-     </attribute>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>210</y>
+        <x>220</x>
+        <y>500</y>
         <width>191</width>
         <height>91</height>
        </rect>
@@ -784,81 +807,6 @@ color: rgb(255, 255, 255);</string>
       <property name="text">
        <string>Game</string>
       </property>
-     </widget>
-     <widget class="QWidget" name="layoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>90</y>
-        <width>531</width>
-        <height>83</height>
-       </rect>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="BolaFogo">
-         <property name="text">
-          <string>Bola de Fogo</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="QuebraEncantos">
-         <property name="text">
-          <string>Quebra de encantos</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QRadioButton" name="AnulacaoMistica">
-         <property name="text">
-          <string>Anulação Mística</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="Desintegracao">
-         <property name="text">
-          <string>Desintegração</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="Telecinese">
-         <property name="text">
-          <string>Telecinese</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QRadioButton" name="DeteccaoMagia">
-         <property name="text">
-          <string>Detecção de Magia </string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QRadioButton" name="Invisibilidade">
-         <property name="text">
-          <string>Invisibilidade</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QRadioButton" name="RaioEletrico">
-         <property name="text">
-          <string>Raio Elétrico</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QRadioButton" name="Refletir">
-         <property name="text">
-          <string>Refletir</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="Autores">

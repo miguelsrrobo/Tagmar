@@ -37,7 +37,7 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgb(136, 138, 133);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Combate">
      <attribute name="title">
@@ -277,30 +277,17 @@ color: rgb(255, 255, 255);</string>
        <string>→</string>
       </property>
      </widget>
-     <widget class="QLabel" name="Inimigovida">
+     <widget class="QProgressBar" name="vidaInimigo">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>130</x>
         <y>230</y>
-        <width>67</width>
-        <height>17</height>
+        <width>521</width>
+        <height>20</height>
        </rect>
       </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="Inimigomana">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>230</y>
-        <width>67</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
+      <property name="value">
+       <number>0</number>
       </property>
      </widget>
     </widget>
@@ -308,16 +295,6 @@ color: rgb(255, 255, 255);</string>
      <attribute name="title">
       <string>Inventário</string>
      </attribute>
-     <widget class="QListWidget" name="listWidget">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>120</y>
-        <width>256</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
@@ -425,12 +402,6 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
-        <widget class="QSpinBox" name="spinBox"/>
-       </item>
-       <item row="1" column="2">
-        <widget class="QSpinBox" name="spinBox_2"/>
-       </item>
        <item row="3" column="0">
         <widget class="QLineEdit" name="lineEdit_3"/>
        </item>
@@ -473,9 +444,6 @@ color: rgb(255, 255, 255);</string>
        <item row="3" column="2">
         <widget class="QSpinBox" name="spinBox_10"/>
        </item>
-       <item row="1" column="3">
-        <widget class="QSpinBox" name="spinBox_3"/>
-       </item>
        <item row="0" column="4">
         <widget class="QLabel" name="label_9">
          <property name="text">
@@ -499,6 +467,27 @@ color: rgb(255, 255, 255);</string>
        </item>
        <item row="3" column="4">
         <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="dano">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="critico">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="tipo">
          <property name="text">
           <string/>
          </property>
@@ -547,39 +536,67 @@ color: rgb(255, 255, 255);</string>
        <item row="3" column="3">
         <widget class="QLabel" name="Proficao1">
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item row="3" column="4">
         <widget class="QLabel" name="Proficao2">
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item row="1" column="1" colspan="4">
         <widget class="QLabel" name="Raca">
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item row="0" column="2" colspan="3">
         <widget class="QLabel" name="Nome">
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item row="2" column="3" colspan="2">
         <widget class="QLabel" name="Estagio">
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
          </property>
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QLabel" name="image">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>151</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imagen Da Raça</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>201</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
      </widget>
     </widget>
    </widget>

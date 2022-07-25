@@ -103,10 +103,10 @@ private slots:
     void passagem4();
     void interacaocasal();
     void interacaoNegativas();
-    void negativas1(int d20, int carisma);
+    void negativas1();
     void personagem();
 
-
+    void combate(int d20, int d6);
     void on_magias_clicked();
 
 private:
