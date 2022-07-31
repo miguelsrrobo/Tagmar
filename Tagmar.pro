@@ -9,30 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    armas.cpp \
     bookmage.cpp \
     inimigo.cpp \
     level.cpp \
     main.cpp \
-    mainwindow.cpp \
-    mapa.cpp \
-    player.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    armas.h \
     bookmage.h \
-    conexao.h \
     inimigo.h \
     level.h \
-    mainwindow.h \
-    mapa.h \
-    player.h
+    mainwindow.h
 
 FORMS += \
     bookmage.ui \
     level.ui \
-    mainwindow.ui \
-    mapa.ui
+    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

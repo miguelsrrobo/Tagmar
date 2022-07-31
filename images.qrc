@@ -8,7 +8,6 @@
         <file>inimigo.png</file>
         <file>mapacor.png</file>
         <file>bandidos.png</file>
-        <file>mapa.png</file>
         <file>casal.png</file>
         <file>transicao.png</file>
         <file>cidadefora.png</file>
@@ -35,5 +34,10 @@
         <file>estrada.jpg</file>
         <file>chuva.jpg</file>
         <file>orc.png</file>
+        <file>alvorada.jpg</file>
+        <file>esplosao.jpg</file>
+        <file>ferumbras.png</file>
+        <file>ferumbrasjovem.jpg</file>
+        <file>the_end.jpg</file>
     </qresource>
 </RCC>

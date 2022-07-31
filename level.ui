@@ -37,7 +37,7 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgb(136, 138, 133);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Combate">
      <attribute name="title">
@@ -148,13 +148,6 @@ color: rgb(255, 255, 255);</string>
              </property>
             </spacer>
            </item>
-           <item>
-            <widget class="QPushButton" name="pushButton">
-             <property name="text">
-              <string>Mapa</string>
-             </property>
-            </widget>
-           </item>
           </layout>
          </item>
          <item>
@@ -185,13 +178,6 @@ color: rgb(255, 255, 255);</string>
               </size>
              </property>
             </spacer>
-           </item>
-           <item>
-            <widget class="QPushButton" name="magias">
-             <property name="text">
-              <string>Magias</string>
-             </property>
-            </widget>
            </item>
           </layout>
          </item>
@@ -298,8 +284,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>290</x>
-        <y>260</y>
+        <x>390</x>
+        <y>220</y>
         <width>171</width>
         <height>50</height>
        </rect>
@@ -340,8 +326,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>440</y>
+        <x>10</x>
+        <y>360</y>
         <width>212</width>
         <height>50</height>
        </rect>
@@ -382,93 +368,17 @@ color: rgb(255, 255, 255);</string>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>21</x>
-        <y>321</y>
-        <width>443</width>
-        <height>135</height>
+        <x>10</x>
+        <y>280</y>
+        <width>401</width>
+        <height>61</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="1" column="0">
-        <widget class="QLineEdit" name="lineEdit"/>
-       </item>
-       <item row="2" column="2">
-        <widget class="QSpinBox" name="spinBox_6"/>
-       </item>
        <item row="0" column="3">
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>Tipo</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLineEdit" name="lineEdit_3"/>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>Arma</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QSpinBox" name="spinBox_9"/>
-       </item>
-       <item row="3" column="3">
-        <widget class="QSpinBox" name="spinBox_11"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLineEdit" name="lineEdit_2"/>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Critico</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Dano</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QSpinBox" name="spinBox_5"/>
-       </item>
-       <item row="2" column="3">
-        <widget class="QSpinBox" name="spinBox_7"/>
-       </item>
-       <item row="3" column="2">
-        <widget class="QSpinBox" name="spinBox_10"/>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="label_9">
-         <property name="text">
-          <string>Alcance</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QLabel" name="label_16">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QLabel" name="label_17">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="4">
-        <widget class="QLabel" name="label_18">
-         <property name="text">
-          <string/>
          </property>
         </widget>
        </item>
@@ -479,10 +389,31 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
-        <widget class="QLabel" name="critico">
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_16">
          <property name="text">
           <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Alcance</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Critico</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Arma</string>
          </property>
         </widget>
        </item>
@@ -493,57 +424,46 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Dano</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="critico">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>22</x>
-        <y>22</y>
+        <x>10</x>
+        <y>0</y>
         <width>209</width>
-        <height>88</height>
+        <height>111</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_4">
-       <item row="0" column="0" colspan="2">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Nome:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>Raça:</string>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="0" colspan="3">
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>Estagio:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0" colspan="3">
         <widget class="QLabel" name="label_15">
          <property name="text">
           <string>Profição:</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="3">
-        <widget class="QLabel" name="Proficao1">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label">
          <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="4">
-        <widget class="QLabel" name="Proficao2">
-         <property name="text">
-          <string/>
+          <string>Nome:</string>
          </property>
         </widget>
        </item>
@@ -554,6 +474,13 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Raça:</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="2" colspan="3">
         <widget class="QLabel" name="Nome">
          <property name="text">
@@ -561,8 +488,22 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
+       <item row="3" column="0" colspan="3">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Possui Deus:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QLabel" name="deus">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
        <item row="2" column="3" colspan="2">
-        <widget class="QLabel" name="Estagio">
+        <widget class="QLabel" name="Proficao1">
          <property name="text">
           <string/>
          </property>
@@ -573,8 +514,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="image">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>10</y>
+        <x>550</x>
+        <y>20</y>
         <width>151</width>
         <height>191</height>
        </rect>
@@ -586,17 +527,162 @@ color: rgb(255, 255, 255);</string>
      <widget class="QComboBox" name="comboBox">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>140</y>
-        <width>201</width>
+        <x>10</x>
+        <y>200</y>
+        <width>371</width>
         <height>71</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
       </property>
       <item>
        <property name="text">
         <string/>
        </property>
       </item>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>230</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="Intelecto">
+           <property name="text">
+            <string>Intelecto</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="intelectoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="Aura">
+           <property name="text">
+            <string>Aura</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="auraLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="Carisma">
+           <property name="text">
+            <string>Carisma</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="carismaLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLabel" name="Forca">
+           <property name="text">
+            <string>Força</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="forcaLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="Fisico">
+           <property name="text">
+            <string>Físico</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="fisicoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="Agilidade">
+           <property name="text">
+            <string>Agilidade</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="agilidadeLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLabel" name="Percepcao">
+           <property name="text">
+            <string>Percepcao</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="percepcaoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>

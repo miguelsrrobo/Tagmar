@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <string>
 #include "level.h"
-#include <QState>
+//#include <QState>
 #include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +20,24 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     int setdaita();
+    QString GetRaca();
+    QString GetClasse();
+    QString GetNome();
+    QString GetProficao2();
+    bool GetDeus();
+    size_t GetEstagio();
+    size_t GetLife();
+    size_t GetAtaque();
+    size_t GetDefesa();
+    size_t GetMana();
+    size_t GetIntelecto();
+    size_t GetFisico();
+    size_t GetAura();
+    size_t GetCarisma();
+    size_t GetForca();
+    size_t GetAgilidade();
+    size_t GetPercepcao();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -34,13 +52,17 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Level *level;
-    Player *player;
-//    bool _logado;
-//    QString _nome, _raca, _proficao1, _proficao2;
-//    bool _deus;
-//    size_t _estagio;
-//    size_t _life = 0, _ataque = 0, _defesa = 0, _mana = 0;
-//    size_t _intelecto = 0, _fisico = 0, _aura = 0, _carisma = 0, _forca = 0, _agilidade = 0, _percepcao = 0;
+//    Player *player;
+    bool raca,_deus;
     void habilidade();
+    size_t _estagio;
+    size_t _life, _ataque = 0, _defesa = 0, _mana;
+    size_t _intelecto = 0, _fisico = 0, _aura = 0, _carisma = 0, _forca = 0, _agilidade = 0, _percepcao = 0;
+
+    //Inicio
+
+    //Fim
+
+
 };
 #endif // MAINWINDOW_H
