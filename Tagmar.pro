@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,16 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     bookmage.cpp \
+    inimigo.cpp \
     level.cpp \
     main.cpp \
-    mainwindow.cpp \
-    player.cpp
+    mainwindow.cpp
 
 HEADERS += \
     bookmage.h \
+    inimigo.h \
     level.h \
-    mainwindow.h \
-    player.h
+    mainwindow.h
 
 FORMS += \
     bookmage.ui \

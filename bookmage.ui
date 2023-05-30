@@ -6,15 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>371</width>
-    <height>328</height>
+    <width>578</width>
+    <height>323</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/concreto.jpg);
+color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(136, 138, 133);</string>
+   </property>
+   <widget class="QPushButton" name="Ok">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -24,93 +31,72 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Ok</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>21</x>
       <y>19</y>
-      <width>341</width>
+      <width>543</width>
       <height>221</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QRadioButton" name="radioButton_4">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_2">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QRadioButton" name="radioButton_5">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="0">
-      <widget class="QRadioButton" name="radioButton_3">
+      <widget class="QRadioButton" name="Invisibilidade">
        <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1" rowspan="2">
-      <widget class="QRadioButton" name="radioButton_6">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QRadioButton" name="radioButton_7">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QRadioButton" name="radioButton_8">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QRadioButton" name="radioButton_9">
-       <property name="text">
-        <string>RadioButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QRadioButton" name="radioButton_10">
-       <property name="text">
-        <string>RadioButton</string>
+        <string>Invisibilidade</string>
        </property>
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QRadioButton" name="radioButton_11">
+      <widget class="QRadioButton" name="QuebraEncantos">
        <property name="text">
-        <string>RadioButton</string>
+        <string>Quebra de encantos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="Desintegracao">
+       <property name="text">
+        <string>Desintegração</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="RaioEletrico">
+       <property name="text">
+        <string>Raio Elétrico</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="AnulacaoMistica">
+       <property name="text">
+        <string>Anulação Mística</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" rowspan="2">
+      <widget class="QRadioButton" name="Refletir">
+       <property name="text">
+        <string>Refletir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QRadioButton" name="Telecinese">
+       <property name="text">
+        <string>Telecinese</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QRadioButton" name="DeteccaoMagia">
+       <property name="text">
+        <string>Detecção de Magia </string>
        </property>
       </widget>
      </item>
@@ -122,8 +108,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>371</width>
-     <height>22</height>
+     <width>578</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>

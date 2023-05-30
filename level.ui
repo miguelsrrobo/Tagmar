@@ -43,7 +43,7 @@ color: rgb(255, 255, 255);</string>
      <attribute name="title">
       <string>Combate</string>
      </attribute>
-     <widget class="QProgressBar" name="progressBar_3">
+     <widget class="QProgressBar" name="experiencia">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -56,82 +56,169 @@ color: rgb(255, 255, 255);</string>
        <number>0</number>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label1">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>210</x>
         <y>20</y>
-        <width>201</width>
-        <height>161</height>
+        <width>361</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="label2">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>210</y>
-        <width>67</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
+        <x>10</x>
         <y>250</y>
-        <width>67</width>
-        <height>17</height>
+        <width>751</width>
+        <height>61</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>751</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>384</y>
-        <width>771</width>
-        <height>149</height>
+        <x>10</x>
+        <y>380</y>
+        <width>761</width>
+        <height>151</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QRadioButton" name="radioButton">
-           <property name="text">
-            <string>RadioButton</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QRadioButton" name="Button1">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="testo1">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QRadioButton" name="radioButton_2">
-           <property name="text">
-            <string>RadioButton</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QRadioButton" name="Button2">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="testo2">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QRadioButton" name="radioButton_3">
-           <property name="text">
-            <string>RadioButton</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QRadioButton" name="Button3">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="testo3">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="ok">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="text">
-            <string>PushButton</string>
+            <string>Ok</string>
            </property>
           </widget>
          </item>
@@ -140,14 +227,20 @@ color: rgb(255, 255, 255);</string>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QProgressBar" name="progressBar_2">
+          <widget class="QProgressBar" name="vida">
+           <property name="maximum">
+            <number>10000</number>
+           </property>
            <property name="value">
             <number>0</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QProgressBar" name="progressBar">
+          <widget class="QProgressBar" name="mana">
+           <property name="maximum">
+            <number>10000</number>
+           </property>
            <property name="value">
             <number>0</number>
            </property>
@@ -157,11 +250,440 @@ color: rgb(255, 255, 255);</string>
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="direita">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>220</y>
+        <width>31</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>→</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="vidaInimigo">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>521</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Inventario">
      <attribute name="title">
       <string>Inventário</string>
      </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>220</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Peso</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>      M$</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>    MO$</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="mprataBox"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="mouroBox"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>212</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Armadura</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Escudo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Soma</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>401</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="dano">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Alcance</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Critico</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Arma</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="tipo">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Dano</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="critico">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>209</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0" colspan="3">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Profição:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Nome:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="4">
+        <widget class="QLabel" name="Raca">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Raça:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="3">
+        <widget class="QLabel" name="Nome">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="3">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Possui Deus:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QLabel" name="deus">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <widget class="QLabel" name="Proficao1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="image">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>20</y>
+        <width>151</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imagen Da Raça</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>371</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>230</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="Intelecto">
+           <property name="text">
+            <string>Intelecto</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="intelectoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="Aura">
+           <property name="text">
+            <string>Aura</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="auraLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="Carisma">
+           <property name="text">
+            <string>Carisma</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="carismaLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLabel" name="Forca">
+           <property name="text">
+            <string>Força</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="forcaLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="Fisico">
+           <property name="text">
+            <string>Físico</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="fisicoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="Agilidade">
+           <property name="text">
+            <string>Agilidade</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="agilidadeLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLabel" name="Percepcao">
+           <property name="text">
+            <string>Percepcao</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="percepcaoLabel">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -171,7 +693,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
